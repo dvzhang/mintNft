@@ -11,7 +11,7 @@ async function main() {
     
     const nftabi = fs.readFileSync("./constants/BasicNft.json", "utf8")
     
-    const nftaddress = '0x413D2a2CfA42CDe520b0373AdB6b72FA82b61B36' // WETH Contract
+    const nftaddress = '0xd8f65552dE03BA8366B4b646B4EA2b3045fE2721' // WETH Contract
     const contract = new ethers.Contract(nftaddress, nftabi, wallet)
     const address = await wallet.getAddress()
     // 读取WETH合约的链上信息（WETH abi）
